@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel=“stylesheet” href=“style.css”>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,22 @@
 </head>
 <body>
     <div>
-    <input type="text" placeholder="udername" id="username" class="username"><br>
-    <input type="password" placeholder="password" id="password" class="username">
     <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_WZ1sT4.json" background="transparent"  speed="1"  style="width: 200px; height: 200px;" loop autoplay></lottie-player>
     <br>
+    <form action="" id="login">
+    <input type="text" placeholder="username" id="username" class="username"><br>
+    <input type="password" placeholder="password" id="password" class="password"><br>
     <button>login</button><br>  
-    <a href="#" id="find_pw">Lost your Password?</a>
-    <button>sign up here</button>
+    <p>Lost your Password?<a href="#" id="find_pw">Clik Here!</a></p>
+    <button class="signup"><a href="signup.html">Sign up
+    </a></button>
+    </form>
     </div>
 
+    
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="./helloworld.js"></script>
